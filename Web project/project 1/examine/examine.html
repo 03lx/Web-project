@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">survey-form</h1>
+<p id="description">Survey on the use of web form elements</p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Please enter your name" required /></label>
+        <label id="email-label" for="email">Email :<input id="email" name="email" type="text" placeholder="Please enter your email" required></label>
+        <label id="number-label" for="age">Age (years): <input id="age" type="number" name="age" min="1" max="120" /></label>
+        <label for="dropdown">Political outlook
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Party member</option>
+                <option value="2">Communist Youth League members</option>
+                <option value="3">The masses</option>
+            </select>
+        </label>
+        <label id="radio-label" for="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+        <input type="radio" name="radio button" value="Get together" />Get together<br>
+        <input type="radio" name="radio button" value="Incapable" />Incapable<br>
+        <label id="Check box" for="Check box">You've learned all about computers.
+            <input type="checkbox" name="Check box" value="JavaScript "/>JavaScript<br>
+            <input type="checkbox" name="Check box" value="Linux"/>Linux<br>
+            <input type="checkbox" name="Check box" value="Bootstrap"/>Bootstrap<br>
+            <input type="checkbox" name="Check box" value="Java"/>Java<br>
+            <input type="checkbox" name="Check box" value="MySQL"/>MySQL<br>
+        </label>
+        <label for="bio">What's your opinion about learning software knowledge:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Say a word or two....."></textarea>
+        </label>
+        <input type="submit" value="Submit" />
+    </fieldset>
+</form>
+</body>
+</html>
